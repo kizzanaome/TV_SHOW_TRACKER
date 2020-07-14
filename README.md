@@ -8,6 +8,7 @@ A web application that allows a user to keep track of their TV Shows.
 - apollo-server 2.15.1
 - nodemon 2.0.4
 - graphql 15.3.0
+- React
 
 ## PROJECT SETUP
 
