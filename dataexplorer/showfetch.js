@@ -12,6 +12,7 @@ fetch(url)
           name: showdata.name,
           genres:showdata.genres,
           premiered:showdata.premiered,
+          rating:showdata.rating,
           status: showdata.status
       }
       console.log(customshow);
