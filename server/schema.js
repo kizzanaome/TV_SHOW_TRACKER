@@ -1,18 +1,18 @@
 const { gql } = require('apollo-server');
 
 const typeDefs = gql`
-type Show{
+type TvShow{
     id:ID!
     name:String
     genre:String
     Rating:Int
     Date:Int
-    Status:Boolean!
+    Status:String!
 }
 
 type Query{
-    shows:[Show]!
-    show(id:ID):Show
+    tvshows:[TvShow]!
+    tvshow(id:ID):TvShow
     me:User
 }
 
@@ -20,7 +20,7 @@ type User{
     id:ID!
     username:String
     password: String!
-    shows:[Show]!
+    tvshows:[TvShow]!
 } 
 
 type Mutation{
@@ -33,7 +33,7 @@ type Mutation{
 type ShowUpdateResponse{
     success:Boolean!
     message:String
-    shows:[Show]
+    tvshows:[TvShow]
 }
 `;
   

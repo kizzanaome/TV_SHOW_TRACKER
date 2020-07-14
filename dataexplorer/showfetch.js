@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-const url  = "http://api.tvmaze.com/shows/1"
+const url  = "http://api.tvmaze.com/shows"
 fetch(url)
   
   .then(function(response){
@@ -14,5 +14,5 @@ fetch(url)
           premiered:showdata.premiered,
           status: showdata.status
       }
-      console.log(customshow);
+      console.log(showdata);
   });
