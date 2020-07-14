@@ -1,0 +1,105 @@
+/*    the design for the sign up page   */
+
+.right_container{
+    float: right;
+    width: 50%;
+    background-color: transparent;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_container{
+    width: 49%;
+    float: left;
+    background-color: #fff;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_container p{
+    font-size: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.right_container p small{
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+.signup_box{
+    /* margin: 0 auto; */
+    width:42%;
+    text-align: center;
+    /* border: 1px solid #eb2429; */
+}
+
+.right_container_box {
+    width: 60%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro{
+    display: none;
+}
+
+.introduction h1{
+    color: #1d1d1d;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+/*    ----    design for the  form  ----   */
+
+.myform{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.myform .input-box {
+    margin: 20px 0;
+}
+
+.myform .input-box input {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px;
+    color: #1d1d1d;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: #fbf9f966;
+    box-sizing: border-box;
+}
+
+.myform .input-box input:focus,
+.myform .input-box input:valid {
+    border-bottom: 0.5px solid #eb2429;
+}
+
+.myform .input-box input[type="submit"] {
+    border: none;
+    background: #eb2429;
+    border-radius:25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.myform .input-box input[type="submit"]:hover,
+.menu input[type="submit"]:hover {
+    background: #1d1d1d;
+    transition: 0.7s;
+}

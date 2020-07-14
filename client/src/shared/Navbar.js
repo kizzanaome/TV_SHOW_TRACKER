@@ -79,6 +79,11 @@ const Nav = styled.div`
         font-weight: bold;
     }
 
+    .menu input[type="submit"]:hover {
+        background: #1d1d1d;
+        transition: 0.7s;
+    }
+
 `
 
 const Navbar = () => {
@@ -90,7 +95,7 @@ const Navbar = () => {
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle" />
                 <ul className="menu">
-                    <li><Link to="/">Home</Link></li><li>
+                    <li><Link to="/home">Home</Link></li><li>
                         <a href="orders.html">Profile</a></li><li>
                         <Link to="/about">About</Link></li>
                         <li><input type="submit" name="" value="Log Out" /></li>

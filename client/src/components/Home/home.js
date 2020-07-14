@@ -12,7 +12,7 @@ import Navbar from '../../shared/Navbar';
 const Home = () => {
 
     return (
-        <div className="homebox">
+        <div className="body">
             <Navbar />
             <div className="container">
                 <div className="serie">
