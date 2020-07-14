@@ -1,20 +1,27 @@
 const { gql } = require('apollo-server');
 
 const typeDefs = gql`
+
+
+
+
 type TvShow{
     id:ID!
     name:String
-    genre:String
-    Rating:Int
-    Date:Int
-    Status:String!
+    genres:[String]
+    premiered:String
+    status:String
 }
+
+
 
 type Query{
     tvshows:[TvShow]!
     tvshow(id:ID):TvShow
     me:User
 }
+
+
 
 type User{
     id:ID!
