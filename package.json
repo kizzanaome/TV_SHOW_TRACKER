@@ -1,0 +1,26 @@
+{
+  "name": "Tv_show_tracker",
+  "version": "1.0.0",
+  "description": "A web application that aids John and his friend to keep track of their TV Shows.",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kizzanaome/Tv_show_tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kizzanaome/Tv_show_tracker/issues"
+  },
+  "homepage": "https://github.com/kizzanaome/Tv_show_tracker#readme",
+  "dependencies": {
+    "apollo-server": "^2.15.1",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4"
+  }
+}

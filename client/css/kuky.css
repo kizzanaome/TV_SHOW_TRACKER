@@ -1,0 +1,524 @@
+@font-face{
+    font-family: myfont;
+    src: url(../fonts/ff-clan-web-pro-thin.woff);
+}
+
+@font-face{
+    font-family: Rubik;
+    src: url(../fonts/rubik/Rubik-Regular.ttf);
+}
+
+/* *,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-family:myfont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* font-family:Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* linear-gradient(to right, #00000081, #000000c0),  */
+/* } */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family:myfont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to right, #00000036, #0000007a), url(../images/bg3.jpg);
+    background-attachment: fixed;
+}
+
+/* body {
+    background-color: #F8F9FA;
+} */
+
+.body {
+    background-color: #F8F9FA;
+}
+
+/* section {
+    background-image: linear-gradient(to right, #00000081, #000000c0), url(../images/backg.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+a{
+    text-decoration: none;
+    color: #eb2429;
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    color: #1d1d1d;
+}
+
+/*    the design for the sign up page   */
+
+.left_container{
+    width: 49%;
+    float: left;
+    background-color: #fff;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_container p{
+    font-size: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.right_container p small{
+    color: #fff;
+    font-size: 13px;
+}
+
+.right_container{
+    float: right;
+    width: 50%;
+    background-color: transparent;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_box{
+    /* margin: 0 auto; */
+    width:42%;
+    text-align: center;
+    /* border: 1px solid #eb2429; */
+}
+
+.right_container_box {
+    width: 60%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro{
+    display: none;
+}
+
+.introduction h1{
+    color: #1d1d1d;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+/*    ----    login page css design  ----   */
+
+.new_container{
+    width: 45%;
+    background: #fff;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box{
+    text-align: center;
+}
+
+.introduction2 {
+    width: 350px;
+}
+
+.introduction2 h1{
+    color: #1d1d1d;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+#logo{
+    margin:0 0 30px;
+    width: 200px;
+}
+
+/*    ----    design for the  form  ----   */
+
+.myform{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.myform .input-box {
+    margin: 20px 0;
+}
+
+.myform .input-box input {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px;
+    color: #1d1d1d;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: #fbf9f966;
+    box-sizing: border-box;
+}
+
+.myform .input-box input:focus,
+.myform .input-box input:valid {
+    border-bottom: 0.5px solid #eb2429;
+}
+
+.myform .input-box input[type="submit"] {
+    border: none;
+    background: #eb2429;
+    border-radius:25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.myform .input-box input[type="submit"]:hover,
+.menu input[type="submit"]:hover {
+    background: #1d1d1d;
+    transition: 0.7s;
+}
+
+/* ---- design navigationbar layout ----   */
+
+ul{
+    height: 75px;
+    float: right;
+    margin: 0;
+}
+
+ul li{
+    display: inline-table;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Rubik;
+    color: #1d1d1d;
+    display: block;
+    padding: 30px 10px;
+    width: 110px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+ul li a:hover{
+    /* color: #fff; */
+    color: #eb2429;
+    transition-duration: 0.5s;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/*    ----   design layout for home page  ----   */
+
+.head{
+    background-color:#fff;
+    border-bottom: 1px solid #eb2429;
+    padding: 0;
+    height: 77px;
+    width: 100%;
+}
+
+.navigation{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 15px;
+    float: left;
+}
+
+.menu_icon{
+    display: none;
+}
+
+.menu input[type="submit"] {
+    font-size: 15px;
+    padding: 7px 25px;
+    border: none;
+    background: #eb2429;
+    border-radius:25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container{
+    margin: 27px auto;
+    /* padding: 0 5px; */
+    /* background: #fbf9f966; */
+    width: 70%;
+    /* border: 1px solid #eb2429; */
+
+    display: grid;
+    /* justify-content: space-between;
+    align-items: center; */
+    grid-template-columns: auto auto auto;
+}
+
+/* .selection_container{ */
+    /* width: 50%;
+    float: left; */
+    /* background: #F8F9FA;
+    margin: 10px 20px;
+
+    border: 1px solid #eb2429; */
+/* } */
+
+.selected_container{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.selected_container h1{
+    font-size: 20px;
+    margin-top: 70px;
+    color: #FFF;
+}
+
+.selected_container h3{
+    font-size: 17px;
+    color: #FFF;
+}
+
+/* .home_box{ */
+    /* margin: 30px auto; */
+    /* width: 70%; */
+    /* text-align: center;
+    border: 1px solid #eb2429; */
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.order{
+    display: none;
+}
+
+.serie {
+    width: 310px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    /* border: 1px solid #eb2429; */
+    /* height: 200px; */
+    /* overflow: hidden; */
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#serie{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.serie .img-poster {
+    width: 150px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.serie .watched {
+    width: 32px;
+    position: absolute;
+    /* top: 100px;
+    left: 530px; */
+    margin: -260px 0 0 130px;
+}
+
+.serie img{
+    width: 150px;
+    /* overflow: hidden; */
+    /* height: 87px; */
+    /* float: left; */
+}
+
+.serie .content{
+    width: 150px;
+    /* border: 1px solid red; */
+    /* float: right; */
+    /* text-align: left; */
+    /* padding: 10px 0; */
+    color: #1d1d1d;
+}
+
+.serie .content h1{
+    font-size: 20px;
+    font-family: Rubik;
+    margin: 0 0 17px 0;
+    /* font-weight: bolder; */
+}
+
+.content p{
+    font-size: 14px;
+}
+
+.serie .content .about-content {
+    margin: 0 0 17px 0;
+}
+
+.serie a{
+    /* width: 87px;
+    height: 87px; */
+    text-align: center;
+    /* background-image: url(../images/add.jpg); */
+    /* float: right; */
+    color: #1d1d1d;
+    box-sizing: border-box;
+}
+
+/* ---- order page css ----   */
+
+.order_container {
+    font-size: 20px;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    color: #1d1d1d;
+}
+
+.order_container h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+.order_container p small{
+    color: #fff;
+    font-size: 13px;
+}
+
+/* ---- about us page css ----   */
+
+.about_container p{
+    font-size: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.about_container h3, .about_container h1{
+    font-size: 20px;
+    color: #fff;
+}
+
+.about_container p small{
+    color: #fff;
+    font-size: 13px;
+}
+
+.about_container{
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* ---- css for the admin page ----   */
+
+.admin_container{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.admin_container .introduction h1{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#table {
+	margin:0 auto;
+	text-align: center;
+}
+
+#table .card {
+    font-size: 13px; 
+    height: 200px;    
+	background: #fbf9f966; 
+	color: #1d1d1d;
+	padding: 10px 5px 15px;
+    float: left;
+    margin: 3px;
+	display: block;	
+}
+
+#table .card .meal p{
+	font-size: 15px;
+}
+
+#table .card .meal h1{
+    font-size: 20px;
+    color: #eb2429; 
+}
+
+#table .card img{
+	width: 130px;
+	height: 130px;
+	margin: 0;
+	padding: 0;
+}
+	
+#table .card .accept, #table .card .decline, #table .card .complete {
+	padding: 7px 12px;
+	color: #fff;
+    text-decoration: none; 
+    border-radius: 20px   
+}
+
+.accept{
+	background-color: royalblue;
+}
+
+
+.decline{
+	background: red;
+}
+
+.complete{
+	background: green;
+}
+
+/* ---- footer layout ----   */
+
+/* ---- footer layout ----   */
+
+footer{
+    float: none;
+    clear: both;
+    /* font-family: Rubik; */
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-top: 1px solid #eb2429;
+}
