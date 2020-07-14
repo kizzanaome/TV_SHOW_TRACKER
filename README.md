@@ -1,6 +1,9 @@
 # Tv_show_tracker
 A web application that allows a user to keep track of their TV Shows.
 
+## Click here to see the currently hosted page.
+- https://kizzanaome.github.io/Tv_show_tracker/
+
 ## PROJECT REQUIREMENTS
 - apollo-server 2.15.1
 - nodemon 2.0.4
