@@ -1,14 +1,11 @@
-import React from 'react';
 import styled from 'styled-components';
 
 
 const Theform = styled.div`
 
+    width: 300px;
+    margin: 50px auto;
     
-        width: 300px;
-        margin: 50px auto;
-    
-
     .input-box {
         margin: 20px 0;
     }
