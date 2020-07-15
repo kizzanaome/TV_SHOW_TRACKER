@@ -21,7 +21,8 @@ class TvShowAPI extends RESTDataSource {
         genres:tvshow.genres,
         rating:tvshow.rating,
         premiered:tvshow.premiered,
-        status: tvshow.status
+        status: tvshow.status,
+        cursor:tvshow.name
     };
   }
 }
