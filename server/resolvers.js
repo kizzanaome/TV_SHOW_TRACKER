@@ -4,5 +4,7 @@ module.exports = {
         dataSources.tvshowAPI.getAllTvShows(),
     //   tvshows: (_, { id }, { dataSources }) =>
     //     dataSources.tvshowsAPI.gettvshowById({ tvshowId: id })
+      users:(_,__, {datasources}) =>
+        dataSources.userAPI.getUsers()
     }
   };
