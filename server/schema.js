@@ -46,13 +46,14 @@ type TvShowConnection { # add this below the Query type as an additional type.
 type User{
     id:ID!
     username:String
+    email:String!
     password: String!
     tvshows:[TvShow]!
 } 
 
 type Mutation{
     #if false, saving show failed-- errors
-     addShow(showid:ID ):ShowUpdateResponse!
+     addTvShow(tvshowId:ID! ):ShowUpdateResponse!
 
      login(email:String):String 
 }
