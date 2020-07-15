@@ -2,8 +2,6 @@ const {paginateResults} = require("./utils")
 
 module.exports = {
     Query: {
-      // tvshows: (_, __, { dataSources }) =>
-      //   dataSources.tvshowAPI.getAllTvShows(),
     //   tvshows: (_, { id }, { dataSources }) =>
     //     dataSources.tvshowsAPI.gettvshowById({ tvshowId: id })
 
@@ -29,5 +27,20 @@ module.exports = {
     },
       users:(_,__, {dataSources}) =>
         dataSources.userAPI.getUsers()
+    },
+    Mutation:{
+      login: async (_, { email }, { dataSources }) => {
+        const user = await dataSources.userAPI.getUser({ email });
+        if (user) return Buffer.from(email).toString('base64');
+      },
+      addTvShow : async(_,{tvshowId}, {dataSources}) =>{
+        const results = await dataSources.userAPI.addTvShow({tvshowId})
+        return{
+          success :results.length ? true :false,
+          message :results.length ? "Tvshow data succesfully saved" :"Tvshow data NOT saved",
+          tvshows:results
+
+        }
+      }
     }
   };
