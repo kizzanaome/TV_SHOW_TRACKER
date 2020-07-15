@@ -14,7 +14,7 @@ const Signup = () => {
 
                     <div id="intro1">
                         <p>Kuky films is the world’s most popular and authoritative source for movie, TV, and celebrity information. Watch trailers, get showtimes, and buy tickets for upcoming films.</p>
-                        <p><small>Make that order now by <a href="index.html">Signing up</a>.</small></p>
+                        <p><small>Make that order now by <Link to="/">Signing up</Link>.</small></p>
                     </div>
                     <div id="intro" className="introduction">
                         <h1>Sign up with us and make <br />any orders for they will be at <br />your doorstep, <br />If you
@@ -35,7 +35,7 @@ const Signup = () => {
                         <p><Link to="/login">Login here</Link>.</p>
                     </div>
                     <Theform>
-                        <form method="" action="home.html">
+                        <form method="" action="/home">
                             <div className="input-box">
                                 <input type="text" name="" placeholder="Username" required="" />
                             </div>
@@ -49,10 +49,10 @@ const Signup = () => {
                                 <input type="password" name="" placeholder="Confirm Password" required="" />
                             </div>
                             <div className="input-box">
-                                <input onclick="auth_for_user()" type="submit" name="" value="Sign Up" />
+                                <input type="submit" name="" value="Sign Up" />
                             </div>
                             <p></p>
-                            <p><small>By signing in, you agree to the <a href="#">Terms and Conditions</a> here.</small></p>
+                            <p><small>By signing in, you agree to the <Link to="/">Terms and Conditions</Link> here.</small></p>
                         </form>
                     </Theform>
                 </div>

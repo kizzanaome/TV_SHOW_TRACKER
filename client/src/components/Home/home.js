@@ -20,9 +20,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
@@ -31,9 +31,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
@@ -42,9 +42,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
@@ -53,9 +53,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
@@ -64,9 +64,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
@@ -75,9 +75,9 @@ const Home = () => {
                     <div className="content">
                         <h1>Riverdale</h1>
                         <p className="about-content">A small town with wierd secrets and a case to solve</p>
-                        <p>Genre: Love & Homicide</p>
-                        <p>Rating: 31 votes</p>
-                        <p>Posted: 21st Jan 2018</p>
+                        <p><span>Genre</span>: Love & Homicide</p>
+                        <p><span>Rating</span>: 31 votes</p>
+                        <p><span>Posted</span>: 21st Jan 2018</p>
                         {/* <!-- <img className="watched" src="images/watched.svg"> --> */}
                     </div>
                 </div>
