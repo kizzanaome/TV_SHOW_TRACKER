@@ -14,7 +14,8 @@ const db = [
                     "Thriller"
                   ],
                   "premiered": "2013-06-24",
-                  "status": "Ended"
+                  "status": "Ended",
+                  "rating":{"average":6.9}
                 },
                 {
                     "id": "2",
@@ -25,7 +26,9 @@ const db = [
                       "Science-Fiction"
                     ],
                     "premiered": "2011-09-22",
-                    "status": "Ended"
+                    "status": "Ended",
+                    "rating":{"average":6.7}
+
                   },
         ]
     },
@@ -44,7 +47,9 @@ const db = [
                   "Romance"
                 ],
                 "premiered": "2014-01-11",
-                "status": "Ended"
+                "status": "Ended",
+                "rating":{"average":6.8}
+
               },
         ]
     },

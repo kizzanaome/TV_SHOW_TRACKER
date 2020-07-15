@@ -1,7 +1,7 @@
 const db = require("./db")
 
 module.exports ={
-    createStrore :() =>{
+    createStore: () =>{
         
         const users = db.map(user =>{
             return user
