@@ -13,7 +13,7 @@ const server = new ApolloServer({
   resolvers,
   dataSources: () => ({
     tvshowAPI: new TvShowAPI(),
-    userAPI: new userAPI({store})
+    userAPI: new UserAPI({store})
   })
  });
 
