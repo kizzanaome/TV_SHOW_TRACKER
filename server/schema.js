@@ -2,25 +2,25 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
 
-
-
+type Rating{
+    average: Float
+}
 
 type TvShow{
     id:ID!
     name:String
     genres:[String]
     premiered:String
+    rating:Rating
     status:String
 }
-
-
 
 type Query{
     tvshows:[TvShow]!
     tvshow(id:ID):TvShow
+    users:[User]
     me:User
 }
-
 
 
 type User{
@@ -43,5 +43,5 @@ type ShowUpdateResponse{
     tvshows:[TvShow]
 }
 `;
-  
+
 module.exports = typeDefs;

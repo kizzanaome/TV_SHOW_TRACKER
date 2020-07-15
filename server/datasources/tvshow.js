@@ -19,7 +19,7 @@ class TvShowAPI extends RESTDataSource {
         id :tvshow.id,
         name: tvshow.name,
         genres:tvshow.genres,
-        // rating:tvshow.rating,
+        rating:tvshow.rating,
         premiered:tvshow.premiered,
         status: tvshow.status
     };
