@@ -35,7 +35,7 @@ class UserAPI extends DataSource {
 
     async addTvShow({ tvshowId }) {
         const userId = this.context.user.id
-        console.log(userId)
+        // console.log(userId)
         
         if (!userId) {
             console.log("No user on context")
@@ -54,7 +54,7 @@ class UserAPI extends DataSource {
                 users.push(elem)
             }
         })
-        return user[0].tvshows.length > 2 ? users[0].tvshows : "oh noo"
+        return users[0].tvshows.length > 2 ? users[0].tvshows : "oh noo"
     }
 }
 
