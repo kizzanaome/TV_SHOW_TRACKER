@@ -28,7 +28,9 @@ module.exports ={
               )
           : results.slice(0, pageSize);
       },    
-    createStore: () =>{
+
+      
+    createStore: () => {
         
         const users = db.map(user =>{
             return user
