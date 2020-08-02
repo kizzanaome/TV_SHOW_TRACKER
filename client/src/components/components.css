@@ -1,0 +1,36 @@
+.tvshowtile{
+    background-color: beige;
+    border: 2px solid lightblue;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header{
+    background: navy;
+    color: white;
+
+}
+
+.loginform{
+    width: 40px;
+    margin: auto;
+
+}
+
+input, label{
+    display: block;
+
+    
+}
+.form-group{
+    display: flex;
+    flex-direction: column; 
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.btn{
+    width: 100px;
+}
