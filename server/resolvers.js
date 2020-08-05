@@ -31,8 +31,8 @@ module.exports = {
         dataSources.userAPI.getUsers()
     },
     Mutation:{
-      login: async (_, { email }, { dataSources }) => {
-        const user = await dataSources.userAPI.getUser({ email });
+      login: async (_, { email, password }, { dataSources }) => {
+        const user = await dataSources.userAPI.getUser({ email,password });
         if (user){
           const token = jwt.sign({id:user.id,email:user.email}, 'secret_key', { expiresIn: 60 * 60 });
           console.log("it works")

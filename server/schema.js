@@ -55,7 +55,7 @@ type Mutation{
     #if false, saving show failed-- errors
      addTvShow(tvshowId:ID! ):ShowUpdateResponse!
 
-     login(email:String):String 
+     login(email:String, password:String):String 
 }
 
 type ShowUpdateResponse{
