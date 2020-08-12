@@ -5,7 +5,6 @@ import gql from 'graphql-tag';
 import ApolloClient from 'apollo-client';
 
 import LoginForm from '../components/loginform'
-// import * as LoginTypes from './__generated__/login';
 
 
 const LOGIN_USER = gql`

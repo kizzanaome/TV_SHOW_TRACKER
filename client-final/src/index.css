@@ -1,0 +1,40 @@
+@font-face{
+  font-family: myfont;
+  src: url(./assets/fonts/ff-clan-web-pro-thin.woff);
+}
+
+@font-face{
+  font-family: Rubik;
+  src: url(./assets/fonts/rubik/Rubik-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family:myfont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(to right, #00000036, #0000007a), url(./assets/images/bg3.jpg);
+  background-attachment: fixed;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.body {
+  background-color: #f8f9faf8;
+}
+
+a{
+  text-decoration: none;
+  color: #eb2429;
+  transition-duration: 0.3s;
+}
+
+a:hover{
+  color: #1d1d1d;
+}

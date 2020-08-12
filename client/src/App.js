@@ -35,8 +35,6 @@ function TvShows() {
       e.preventDefault()
       client.writeData({ data: { isLoggedIn: false } });
       localStorage.clear()
-
-
     }
 
     if (loading) return <p>Loading! </p>;
@@ -73,9 +71,9 @@ function TvShows() {
                           if (!fetchMoreResult) return prev;
                           return {
                             ...fetchMoreResult,
-                            launches: {
+                            tvshows: {
                               ...fetchMoreResult.tvshows,
-                              launches: [
+                              tvshows: [
                                 ...prev.tvshows.tvshows,
                                 ...fetchMoreResult.tvshows.tvshows,
                               ],

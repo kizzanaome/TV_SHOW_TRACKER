@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "cd server && nodemon index.js",
-    "react-start" :"cd client && npm start",
+    "react-start": "cd client-final && npm start",
     "dev": "concurrently \"npm run server\" \"npm run react-start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

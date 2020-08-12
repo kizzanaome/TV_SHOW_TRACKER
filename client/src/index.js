@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { ApolloProvider, useQuery } from '@apollo/react-hooks';
 import { resolvers, typeDefs } from './schema';
 import { ApolloClient } from 'apollo-client';
-import { InMemoryCache, NormalizedCacheObject } from 'apollo-cache-inmemory';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 import App from './App';
 import Login from './pages/login'
@@ -29,7 +29,7 @@ const link = new HttpLink({
   uri: 'http://localhost:4000/graphql',
   headers: {
     authorization: localStorage.getItem('token'),
-  }, 
+  }, isLoggedIn
 });
 
 const client = new ApolloClient({
@@ -45,6 +45,7 @@ cache.writeData({
     cartItems: [],
   },
 });
+
 
 ReactDOM.render(
   <ApolloProvider client={client}>

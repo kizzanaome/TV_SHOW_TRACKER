@@ -45,10 +45,15 @@ const server = new ApolloServer({
   }, 
   typeDefs,
   resolvers,
+  engine: {
+    reportSchema: true
+  },
   dataSources: () => ({
     tvshowAPI: new TvShowAPI(),
     userAPI: new UserAPI({store})
   })
+  ,
+
  });
 
 server.listen().then(({ url }) => {
